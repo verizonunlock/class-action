@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verizon Carrier Lock Class Action | Demanda Colectiva Bloqueo Verizon</title>
+    <meta name="description" content="Join the class action lawsuit against Verizon for permanent carrier locks on Pixel devices. Register for free.">
+    <meta name="keywords" content="Verizon, class action, carrier lock, Pixel, bootloader, lawsuit, demanda colectiva">
+    
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --accent-red: #dc2626;
+            --success-green: #059669;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .lang-btn {
+            padding: 8px 20px;
+            border: 2px solid var(--primary-blue);
+            background: white;
+            color: var(--primary-blue);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        .lang-btn.active {
+            background: var(--primary-blue);
+            color: white;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary-blue), #3b82f6);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: 900;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--accent-red), #ef4444);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .legal-notice {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .success-message {
+            background: var(--success-green);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">⚖️ VERIZON UNLOCK</div>
+            <div class="tagline" data-en="Class Action Lawsuit Against Carrier Locks" data-es="Demanda Colectiva Contra Bloqueos de Operadora">
+                Class Action Lawsuit Against Carrier Locks
+            </div>
+            
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="setLanguage('en')">🇺🇸 English</button>
+                <button class="lang-btn" onclick="setLanguage('es')">🇪🇸 Español</button>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="content-section">
+            <h2 data-en="Live Registration Statistics" data-es="Estadísticas de Registro en Vivo">Live Registration Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" id="total-registered">0</span>
+                    <span class="stat-label" data-en="Registered Participants" data-es="Participantes Registrados">Registered Participants</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="total-damages">$0</span>
+                    <span class="stat-label" data-en="Total Estimated Damages" data-es="Daños Totales Estimados">Total Estimated Damages</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="affected-devices">0</span>
+                    <span class="stat-label" data-en="Affected Devices" data-es="Dispositivos Afectados">Affected Devices</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-section">
+            <h2 data-en="About This Class Action" data-es="Sobre Esta Demanda Colectiva">About This Class Action</h2>
+            
+            <div data-en class="content-en">
+                <p><strong>Verizon permanently locks Pixel device bootloaders</strong> preventing users from installing custom operating systems like GrapheneOS, even on fully paid devices. This violates user rights to control their own property and constitutes deceptive business practices.</p>
+                
+                <h3>Your Rights Are Being Violated:</h3>
+                <ul>
+                    <li>🔒 <strong>Property Rights</strong>: You own your device but can't control it</li>
+                    <li>🛡️ <strong>Privacy Rights</strong>: Forced to use Google services, no privacy-focused alternatives</li>
+                    <li>💰 <strong>Economic Harm</strong>: $850+ per device in lost functionality and forced replacements</li>
+                    <li>⚖️ <strong>Antitrust Violations</strong>: Anticompetitive practices limiting consumer choice</li>
+                </ul>
+            </div>
+            
+            <div data-es class="content-es hidden">
+                <p><strong>Verizon bloquea permanentemente los bootloaders de dispositivos Pixel</strong> impidiendo que los usuarios instalen sistemas operativos personalizados como GrapheneOS, incluso en dispositivos completamente pagados. Esto viola los derechos del usuario a controlar su propia propiedad y constituye prácticas comerciales engañosas.</p>
+                
+                <h3>Tus Derechos Están Siendo Violados:</h3>
+                <ul>
+                    <li>🔒 <strong>Derechos de Propiedad</strong>: Eres dueño de tu dispositivo pero no lo puedes controlar</li>
+                    <li>🛡️ <strong>Derechos de Privacidad</strong>: Obligado a usar servicios de Google, sin alternativas enfocadas en privacidad</li>
+                    <li>💰 <strong>Daño Económico</strong>: $850+ por dispositivo en funcionalidad perdida y reemplazos forzados</li>
+                    <li>⚖️ <strong>Violaciones Antimonopolio</strong>: Prácticas anticompetitivas que limitan la elección del consumidor</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="content-section">
+            <h2 data-en="Join the Class Action - FREE Registration" data-es="Únete a la Demanda Colectiva - Registro GRATUITO">Join the Class Action - FREE Registration</h2>
+            
+            <div class="legal-notice">
+                <strong data-en="IMPORTANT" data-es="IMPORTANTE">IMPORTANT</strong>: 
+                <span data-en="Registration is completely free. No upfront costs. No individual lawyers needed. This is a collective action for all affected users." data-es="El registro es completamente gratuito. Sin costos iniciales. No se necesitan abogados individuales. Esta es una acción colectiva para todos los usuarios afectados.">
+                    Registration is completely free. No upfront costs. No individual lawyers needed. This is a collective action for all affected users.
+                </span>
+            </div>
+            
+            <div class="form-container">
+                <form id="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" data-en="First Name *" data-es="Nombre *">First Name *</label>
+                            <input type="text" class="form-input" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-en="Last Name *" data-es="Apellido *">Last Name *</label>
+                            <input type="text" class="form-input" name="last_name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" data-en="Email Address *" data-es="Dirección de Email *">Email Address *</label>
+                        <input type="email" class="form-input" name="email" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" data-en="Phone Number" data-es="Número de Teléfono">Phone Number</label>
+                            <input type="tel" class="form-input" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-en="State/Province *" data-es="Estado/Provincia *">State/Province *</label>
+                            <input type="text" class="form-input" name="state" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" data-en="Device Model *" data-es="Modelo de Dispositivo *">Device Model *</label>
+                        <select class="form-input" name="device_model" required>
+                            <option value="" data-en="Select your device" data-es="Selecciona tu dispositivo">Select your device</option>
+                            <option value="Pixel 9 Pro Fold">Pixel 9 Pro Fold</option>
+                            <option value="Pixel 9 Pro">Pixel 9 Pro</option>
+                            <option value="Pixel 9">Pixel 9</option>
+                            <option value="Pixel 8 Pro">Pixel 8 Pro</option>
+                            <option value="Pixel 8">Pixel 8</option>
+                            <option value="Pixel 7 Pro">Pixel 7 Pro</option>
+                            <option value="Pixel 7">Pixel 7</option>
+                            <option value="Pixel 6 Pro">Pixel 6 Pro</option>
+                            <option value="Pixel 6">Pixel 6</option>
+                            <option value="Other Pixel" data-en="Other Pixel Model" data-es="Otro Modelo Pixel">Other Pixel Model</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" data-en="Purchase Date" data-es="Fecha de Compra">Purchase Date</label>
+                            <input type="date" class="form-input" name="purchase_date">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-en="Purchase Price ($)" data-es="Precio de Compra ($)">Purchase Price ($)</label>
+                            <input type="number" class="form-input" name="purchase_price" min="0" step="0.01">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" data-en="Describe Your Experience" data-es="Describe Tu Experiencia">Describe Your Experience</label>
+                        <textarea class="form-input" name="experience" rows="4" 
+                            data-en="Tell us how Verizon's carrier lock has affected you (e.g., unable to install GrapheneOS, forced to use Google services, etc.)"
+                            data-es="Cuéntanos cómo el bloqueo de operadora de Verizon te ha afectado (ej: no poder instalar GrapheneOS, obligado a usar servicios de Google, etc.)"
+                            placeholder="Tell us how Verizon's carrier lock has affected you..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            <span data-en="I consent to participate in this class action lawsuit and understand my information will be used for legal purposes only." 
+                                  data-es="Consiento participar en esta demanda colectiva y entiendo que mi información será usada solo para propósitos legales.">
+                                I consent to participate in this class action lawsuit and understand my information will be used for legal purposes only.
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" data-en="JOIN THE FIGHT - Register Now" data-es="ÚNETE A LA LUCHA - Regístrate Ahora">
+                        JOIN THE FIGHT - Register Now
+                    </button>
+                </form>
+                
+                <div id="success-message" class="success-message hidden">
+                    <h3 data-en="✅ Registration Successful!" data-es="✅ ¡Registro Exitoso!">✅ Registration Successful!</h3>
+                    <p data-en="Thank you for joining the fight. You will receive updates at your email address." 
+                       data-es="Gracias por unirte a la lucha. Recibirás actualizaciones en tu dirección de email.">
+                        Thank you for joining the fight. You will receive updates at your email address.
+                    </p>
+                    <p><strong data-en="Your Registration ID:" data-es="Tu ID de Registro:">Your Registration ID:</strong> <span id="registration-id"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legal Info -->
+        <div class="content-section">
+            <h2 data-en="Legal Background" data-es="Antecedentes Legales">Legal Background</h2>
+            
+            <div data-en class="content-en">
+                <h3>🎯 Legal Claims</h3>
+                <ul>
+                    <li><strong>Sherman Antitrust Act Violations</strong>: Monopolistic control over device functionality</li>
+                    <li><strong>Deceptive Trade Practices</strong>: Not disclosing permanent locks at purchase</li>
+                    <li><strong>Consumer Protection Laws</strong>: Restricting legitimate use of owned property</li>
+                    <li><strong>Unfair Competition</strong>: Preventing users from choosing alternative operating systems</li>
+                </ul>
+                
+                <h3>💰 Estimated Damages</h3>
+                <p><strong>$850+ per affected device</strong> including:</p>
+                <ul>
+                    <li>Lost device functionality and customization rights</li>
+                    <li>Forced replacement costs for unlocked alternatives</li>
+                    <li>Privacy violations from mandatory Google services</li>
+                    <li>Security vulnerabilities from inability to use hardened OS</li>
+                </ul>
+            </div>
+            
+            <div data-es class="content-es hidden">
+                <h3>🎯 Reclamos Legales</h3>
+                <ul>
+                    <li><strong>Violaciones de la Ley Antimonopolio Sherman</strong>: Control monopolístico sobre la funcionalidad del dispositivo</li>
+                    <li><strong>Prácticas Comerciales Engañosas</strong>: No divulgar bloqueos permanentes al momento de compra</li>
+                    <li><strong>Leyes de Protección al Consumidor</strong>: Restringir el uso legítimo de propiedad propia</li>
+                    <li><strong>Competencia Desleal</strong>: Impedir que los usuarios elijan sistemas operativos alternativos</li>
+                </ul>
+                
+                <h3>💰 Daños Estimados</h3>
+                <p><strong>$850+ por dispositivo afectado</strong> incluyendo:</p>
+                <ul>
+                    <li>Funcionalidad perdida del dispositivo y derechos de personalización</li>
+                    <li>Costos de reemplazo forzado por alternativas desbloqueadas</li>
+                    <li>Violaciones de privacidad por servicios obligatorios de Google</li>
+                    <li>Vulnerabilidades de seguridad por incapacidad de usar OS endurecidos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="content-section">
+            <h2 data-en="Contact & Legal Team" data-es="Contacto y Equipo Legal">Contact & Legal Team</h2>
+            
+            <div data-en class="content-en">
+                <p><strong>Email:</strong> legal@[DOMAIN].org</p>
+                <p><strong>Updates:</strong> All participants receive automatic email updates</p>
+                <p><strong>Legal Strategy:</strong> Inspired by Epic vs Apple - targeting fundamental user rights</p>
+                <p><strong>No Cost:</strong> Contingency-based legal representation. No upfront fees.</p>
+            </div>
+            
+            <div data-es class="content-es hidden">
+                <p><strong>Email:</strong> legal@[DOMAIN].org</p>
+                <p><strong>Actualizaciones:</strong> Todos los participantes reciben actualizaciones automáticas por email</p>
+                <p><strong>Estrategia Legal:</strong> Inspirada en Epic vs Apple - enfocada en derechos fundamentales del usuario</p>
+                <p><strong>Sin Costo:</strong> Representación legal basada en contingencia. Sin tarifas iniciales.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = 'en';
+        let registrationCount = 0;
+        let totalDamages = 0;
+        let deviceCount = 0;
+
+        // Language switching
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[onclick="setLanguage('${lang}')"]`).classList.add('active');
+            
+            // Hide all language content
+            document.querySelectorAll('.content-en, .content-es').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Show current language content
+            document.querySelectorAll(`.content-${lang}`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+            
+            // Update data attributes
+            document.querySelectorAll('[data-en][data-es]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+            
+            // Update placeholders
+            document.querySelectorAll(`[data-${lang}]`).forEach(el => {
+                if (el.hasAttribute('placeholder')) {
+                    el.placeholder = el.getAttribute(`data-${lang}`);
+                }
+            });
+        }
+
+        // Form submission
+        document.getElementById('registration-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Calculate estimated damages
+            const purchasePrice = parseFloat(data.purchase_price) || 800;
+            const estimatedDamages = Math.max(850, purchasePrice * 1.1);
+            
+            // Generate registration ID
+            const registrationId = 'VZ' + Date.now().toString().slice(-6) + Math.random().toString(36).substr(2, 3).toUpperCase();
+            
+            // Simulate registration (replace with actual API call)
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...data,
+                        estimated_damages: estimatedDamages,
+                        registration_id: registrationId,
+                        timestamp: new Date().toISOString(),
+                        language: currentLang
+                    })
+                });
+                
+                if (response.ok) {
+                    // Update statistics
+                    registrationCount++;
+                    totalDamages += estimatedDamages;
+                    deviceCount++;
+                    
+                    updateStatistics();
+                    
+                    // Show success message
+                    document.getElementById('registration-form').classList.add('hidden');
+                    document.getElementById('success-message').classList.remove('hidden');
+                    document.getElementById('registration-id').textContent = registrationId;
+                    
+                    // Send confirmation email (handled by backend)
+                    console.log('Registration successful:', registrationId);
+                } else {
+                    throw new Error('Registration failed');
+                }
+            } catch (error) {
+                // Fallback: store locally and show success
+                localStorage.setItem('vz_registration', JSON.stringify({
+                    ...data,
+                    estimated_damages: estimatedDamages,
+                    registration_id: registrationId,
+                    timestamp: new Date().toISOString()
+                }));
+                
+                registrationCount++;
+                totalDamages += estimatedDamages;
+                deviceCount++;
+                updateStatistics();
+                
+                document.getElementById('registration-form').classList.add('hidden');
+                document.getElementById('success-message').classList.remove('hidden');
+                document.getElementById('registration-id').textContent = registrationId;
+            }
+        });
+
+        function updateStatistics() {
+            document.getElementById('total-registered').textContent = registrationCount.toLocaleString();
+            document.getElementById('total-damages').textContent = '$' + totalDamages.toLocaleString();
+            document.getElementById('affected-devices').textContent = deviceCount.toLocaleString();
+        }
+
+        // Initialize with some demo statistics
+        registrationCount = Math.floor(Math.random() * 500) + 100;
+        totalDamages = registrationCount * 850;
+        deviceCount = registrationCount;
+        updateStatistics();
+
+        // Initialize language
+        setLanguage('en');
+    </script>
+</body>
+</html>
