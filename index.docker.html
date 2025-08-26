@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verizon Carrier Lock Class Action | Join the Fight</title>
+    <meta name="description" content="Join the class action lawsuit against Verizon for permanent carrier locks on Pixel devices. Register for free.">
+    <meta name="keywords" content="Verizon, class action, carrier lock, Pixel, bootloader, lawsuit">
+    
+    <style>
+        :root {
+            --verizon-red: #EE0000;
+            --verizon-black: #000000;
+            --accent-red: #dc2626;
+            --success-green: #059669;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--verizon-red) 0%, #990000 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: 900;
+            color: var(--verizon-red);
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--verizon-red), #cc0000);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: 900;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--verizon-red);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--verizon-red), #cc0000);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .legal-notice {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .success-message {
+            background: var(--success-green);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">⚖️ VERIZON CLASS ACTION</div>
+            <div class="tagline">Fight for Your Device Freedom</div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="content-section">
+            <h2>Live Registration Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" id="total-registered">Loading...</span>
+                    <span class="stat-label">Registered Participants</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="total-damages">Loading...</span>
+                    <span class="stat-label">Total Estimated Damages</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="affected-devices">Loading...</span>
+                    <span class="stat-label">Affected Devices</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-section">
+            <h2>About This Class Action</h2>
+            <p><strong>Verizon permanently locks Pixel device bootloaders</strong> preventing users from installing custom operating systems (LineageOS, CalyxOS, GrapheneOS, /e/OS), custom recovery software (TWRP, CWM), rooting their devices, or any bootloader-level modifications, even on fully paid devices.</p>
+            
+            <h3>Your Rights Are Being Violated:</h3>
+            <ul>
+                <li>🔒 <strong>Property Rights</strong>: You own your device but can't control it</li>
+                <li>🛡️ <strong>Privacy Rights</strong>: Forced to use Google services, no privacy-focused alternatives</li>
+                <li>💰 <strong>Economic Harm</strong>: $850+ per device in lost functionality and forced replacements</li>
+                <li>⚖️ <strong>Antitrust Violations</strong>: Anticompetitive practices limiting consumer choice</li>
+            </ul>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="content-section">
+            <h2>Join the Class Action - FREE Registration</h2>
+            
+            <div class="legal-notice">
+                <strong>IMPORTANT</strong>: Registration is completely free. No upfront costs. No individual lawyers needed. This is a collective action for all affected users.
+            </div>
+            
+            <div class="form-container">
+                <form id="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" class="form-input" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" class="form-input" name="last_name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-input" name="email" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">State/Province *</label>
+                            <input type="text" class="form-input" name="state" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Device Model *</label>
+                        <select class="form-input" name="device_model" required>
+                            <option value="">Select your device</option>
+                            <option value="Pixel 9 Pro Fold">Pixel 9 Pro Fold</option>
+                            <option value="Pixel 9 Pro">Pixel 9 Pro</option>
+                            <option value="Pixel 9">Pixel 9</option>
+                            <option value="Pixel 8 Pro">Pixel 8 Pro</option>
+                            <option value="Pixel 8">Pixel 8</option>
+                            <option value="Pixel 7 Pro">Pixel 7 Pro</option>
+                            <option value="Pixel 7">Pixel 7</option>
+                            <option value="Pixel 6 Pro">Pixel 6 Pro</option>
+                            <option value="Pixel 6">Pixel 6</option>
+                            <option value="Other Pixel">Other Pixel Model</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Purchase Date</label>
+                            <input type="date" class="form-input" name="purchase_date">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Purchase Price ($)</label>
+                            <input type="number" class="form-input" name="purchase_price" min="0" step="0.01">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Describe Your Experience</label>
+                        <textarea class="form-input" name="experience" rows="4" placeholder="Tell us how Verizon's carrier lock has affected you (e.g., unable to install custom ROMs, root your device, use TWRP recovery, etc.)"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            I consent to participate in this class action lawsuit and understand my information will be used for legal purposes only.
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">JOIN THE FIGHT - Register Now</button>
+                </form>
+                
+                <div id="success-message" class="success-message hidden">
+                    <h3>✅ Registration Successful!</h3>
+                    <p>Thank you for joining the fight. You will receive updates at your email address.</p>
+                    <p><strong>Your Registration ID:</strong> <span id="registration-id"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="content-section">
+            <h2>Contact & Legal Team</h2>
+            <p><strong>Email:</strong> legal@verizonunlock.org</p>
+            <p><strong>Updates:</strong> All participants receive automatic email updates</p>
+            <p><strong>Legal Strategy:</strong> Inspired by Epic vs Apple - targeting fundamental user rights</p>
+            <p><strong>No Cost:</strong> Contingency-based legal representation. No upfront fees.</p>
+        </div>
+    </div>
+
+    <script>
+        let registrationCount = 0;
+        let totalDamages = 0;
+        let deviceCount = 0;
+
+        // Load real statistics from API
+        async function loadStatistics() {
+            try {
+                const response = await fetch('/api/stats');
+                if (response.ok) {
+                    const stats = await response.json();
+                    registrationCount = stats.total_registered || 0;
+                    totalDamages = stats.total_damages || 0;
+                    deviceCount = stats.affected_devices || 0;
+                    updateStatistics();
+                } else {
+                    throw new Error('API failed');
+                }
+            } catch (error) {
+                console.log('Failed to load stats from API');
+                // Show zeros if API fails
+                registrationCount = 0;
+                totalDamages = 0;
+                deviceCount = 0;
+                updateStatistics();
+            }
+        }
+
+        function updateStatistics() {
+            document.getElementById('total-registered').textContent = registrationCount.toLocaleString();
+            document.getElementById('total-damages').textContent = '$' + totalDamages.toLocaleString();
+            document.getElementById('affected-devices').textContent = deviceCount.toLocaleString();
+        }
+
+        // Form submission
+        document.getElementById('registration-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Calculate estimated damages
+            const purchasePrice = parseFloat(data.purchase_price) || 800;
+            const estimatedDamages = Math.max(850, purchasePrice * 1.1);
+            
+            // Generate registration ID
+            const registrationId = 'VZ' + Date.now().toString().slice(-6) + Math.random().toString(36).substr(2, 3).toUpperCase();
+            
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...data,
+                        estimated_damages: estimatedDamages,
+                        registration_id: registrationId,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById('registration-form').classList.add('hidden');
+                    document.getElementById('success-message').classList.remove('hidden');
+                    document.getElementById('registration-id').textContent = registrationId;
+                    
+                    // Reload statistics
+                    setTimeout(loadStatistics, 1000);
+                } else {
+                    alert('Registration failed. Please try again.');
+                }
+            } catch (error) {
+                alert('Registration failed. Please check your connection and try again.');
+            }
+        });
+
+        // Load statistics on page load
+        loadStatistics();
+        
+        // Refresh statistics every 30 seconds
+        setInterval(loadStatistics, 30000);
+    </script>
+</body>
+</html>
