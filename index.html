@@ -9,7 +9,8 @@
     
     <style>
         :root {
-            --primary-blue: #1e40af;
+            --verizon-red: #EE0000;
+            --verizon-black: #000000;
             --accent-red: #dc2626;
             --success-green: #059669;
             --text-dark: #1f2937;
@@ -49,7 +50,7 @@
         .logo {
             font-size: 2.5em;
             font-weight: 900;
-            color: var(--primary-blue);
+            color: var(--verizon-red);
             margin-bottom: 10px;
         }
         
@@ -68,9 +69,9 @@
         
         .lang-btn {
             padding: 8px 20px;
-            border: 2px solid var(--primary-blue);
+            border: 2px solid var(--verizon-red);
             background: white;
-            color: var(--primary-blue);
+            color: var(--verizon-red);
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s;
@@ -78,7 +79,7 @@
         }
         
         .lang-btn.active {
-            background: var(--primary-blue);
+            background: var(--verizon-red);
             color: white;
         }
         
@@ -246,7 +247,7 @@
             <h2 data-en="About This Class Action" data-es="Sobre Esta Demanda Colectiva">About This Class Action</h2>
             
             <div data-en class="content-en">
-                <p><strong>Verizon permanently locks Pixel device bootloaders</strong> preventing users from installing custom operating systems like GrapheneOS, even on fully paid devices. This violates user rights to control their own property and constitutes deceptive business practices.</p>
+                <p><strong>Verizon permanently locks Pixel device bootloaders</strong> preventing users from installing custom operating systems, custom recovery software, rooting their devices, or any bootloader-level modifications, even on fully paid devices. This violates user rights to control their own property and constitutes deceptive business practices.</p>
                 
                 <h3>Your Rights Are Being Violated:</h3>
                 <ul>
@@ -341,8 +342,8 @@
                     <div class="form-group">
                         <label class="form-label" data-en="Describe Your Experience" data-es="Describe Tu Experiencia">Describe Your Experience</label>
                         <textarea class="form-input" name="experience" rows="4" 
-                            data-en="Tell us how Verizon's carrier lock has affected you (e.g., unable to install GrapheneOS, forced to use Google services, etc.)"
-                            data-es="Cuéntanos cómo el bloqueo de operadora de Verizon te ha afectado (ej: no poder instalar GrapheneOS, obligado a usar servicios de Google, etc.)"
+                            data-en="Tell us how Verizon's carrier lock has affected you (e.g., unable to install custom ROMs, root your device, use TWRP recovery, etc.)"
+                            data-es="Cuéntanos cómo el bloqueo de operadora de Verizon te ha afectado (ej: no poder instalar ROMs personalizados, rootear tu dispositivo, usar recovery TWRP, etc.)"
                             placeholder="Tell us how Verizon's carrier lock has affected you..."></textarea>
                     </div>
                     

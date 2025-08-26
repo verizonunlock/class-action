@@ -1,8 +1,8 @@
 # ⚖️ Verizon Class Action - Join the Fight
 
-![Legal Action](https://img.shields.io/badge/legal-class%20action-red.svg)
-![Status](https://img.shields.io/badge/status-active-green.svg)
-![Damages](https://img.shields.io/badge/damages-$850%2B%20per%20device-orange.svg)
+![Legal Action](https://img.shields.io/badge/legal-class%20action-EE0000.svg)
+![Status](https://img.shields.io/badge/status-active-EE0000.svg)
+![Damages](https://img.shields.io/badge/damages-$850%2B%20per%20device-000000.svg)
 
 > **Fighting Verizon's anticompetitive practice of permanently locking Google Pixel bootloaders**
 
@@ -11,9 +11,12 @@
 ## 🎯 **THE ISSUE**
 
 Verizon has systematically locked bootloaders on Google Pixel devices, preventing users from:
-- ✅ Installing custom operating systems like GrapheneOS
-- ✅ Exercising full ownership rights over their devices  
-- ✅ Accessing advanced security and privacy features
+- ✅ Installing custom operating systems (LineageOS, CalyxOS, GrapheneOS, /e/OS)
+- ✅ Running custom recovery software (TWRP, CWM)
+- ✅ Rooting devices for advanced customization
+- ✅ Installing alternative firmware and kernels
+- ✅ Accessing bootloader-level system modifications
+- ✅ Exercising full ownership rights over their purchased devices
 - ✅ Using their devices as they see fit after purchase
 
 **This violates the Sherman Antitrust Act and consumer protection laws.**
