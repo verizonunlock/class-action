@@ -1,87 +1,29 @@
-# 🚫 VERIZON CLASS ACTION - GITIGNORE
+# GitHub Pages - Solo archivos web públicos
 
-# === ARCHIVOS SENSIBLES ===
-.env
-.env.local  
-.env.production
-.env.deploy
-*.key
-*.pem
-secrets/
+# === ARCHIVOS PRIVADOS DE CONFIGURACIÓN ===
+CLOUDFLARE_SETUP.md
+*.env*
+deploy_remote.sh
+docker-compose*.yml
+mobile_device_tester.sh
+quick_setup.sh
+setup_github.sh
+api/
+README_WORKFLOW.md
 
-# === RESULTADOS DE TESTS ===
-mobile_test_results/
-test_results/
-exploit_log_*.txt
-*_test_*.json
-*_device_info_*.json
-*_carrier_test_*.json
+# === SCRIPTS Y HERRAMIENTAS ===
+*.py
+*.sh
+class_action_registry.*
 
-# === LOGS Y DATOS ===
-logs/
-data/
-*.log
-registrations.json
-legal_evidence_*.json
-legal_report_*.md
-
-# === DEPENDENCIES ===
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# === CONFIGURACIÓN INTERNA ===
+LEGAL_WARFARE_GUIDE.md
+evidence_collector.*
+email_system.*
 
 # === SISTEMA ===
 .DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
-
-# === BACKUPS ===
+node_modules/
+logs/
+data/
 backups/
-*.backup
-*.dump
-*.sql
-
-# === UPLOADS ===
-uploads/
-temp/
-
-# === IDE ===
-.vscode/
-.idea/
-*.sublime-*
-
-# === PYTHON ===
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# === BUILD OUTPUTS ===
-dist/
-build/
-*.tgz
-
-# === RUNTIME ===
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# === COVERAGE ===
-coverage/
-.nyc_output
-
-# === CACHE ===
-.cache/
-*.cache
-
-# === DOCKER ===
-.dockerignore
-
-# === SSH KEYS (por si acaso) ===
-id_rsa*
-known_hosts
-authorized_keys
